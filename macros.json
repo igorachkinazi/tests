@@ -1,0 +1,25 @@
+{
+"//comments" : "BITS cannot change the order! New bits are to be added at the end!",
+"BITS" : [
+    {"bit": "HFD_TRACE_VOL_BIT"},
+    {"bit": "HFD_TRACE_LBA_BIT"},
+    {"bit": "HFD_TRACE_DATA_LEN_BIT"},
+    {"bit": "HFD_TRACE_RC_BIT"},
+    {"bit": "HFD_TRACE_HOST_BIT"}
+],
+"//comments" : "HFD TRACE Macros definitions below:",
+"vol_rc" : [
+    { "type":"uint64_t",  "name":"volId", "bit":"HFD_TRACE_VOL_BIT", "format":"0x%x" },
+    { "type":"Mos_RC",    "name":"rc",    "bit":"HFD_TRACE_RC_BIT",  "format":"%u" }
+],
+"host_rc" : [
+    { "type":"uint64_t",  "name":"hostId", "bit":"HFD_TRACE_HOST_BIT", "format":"0x%lx" },
+    { "type":"Mos_RC",    "name":"rc",     "bit":"HFD_TRACE_RC_BIT",   "format":"%u"  }
+],
+"vol_lba" : [
+    { "type":"uint64_t",  "name":"volId",    "bit":"HFD_TRACE_VOL_BIT",     "format":"0x%lx" },
+    { "type":"uint64_t",  "name":"lba",      "bit":"HFD_TRACE_LBA_BIT",     "format":"%lu"   },
+    { "type":"uint32_t",  "name":"dataLen", "bit":"HFD_TRACE_DATA_LEN_BIT","format":"%u"    }
+],
+"" : []
+}

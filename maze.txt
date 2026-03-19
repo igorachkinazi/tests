@@ -1,0 +1,16 @@
+vector<string> createMaze() {
+    vector<string> maze;
+    maze.push_back("+++++++++++++++++++++++");
+    maze.push_back("++   +   ++ ++     +  X");
+    maze.push_back("++ +   +       +++ + ++");
+    maze.push_back("++ + +  ++  ++++   + ++");
+    maze.push_back("++++ ++++++    +++ +  +");
+    maze.push_back("++          ++  ++    +");
+    maze.push_back("++++++ ++++++   +++++ +");
+    maze.push_back("++     +   +++++++  + +");
+    maze.push_back("++ +++++++      S +   +");
+    maze.push_back("++                + +++");
+    maze.push_back("+++++++++++++++++++++++");
+    return maze;
+}
+

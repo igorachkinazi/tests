@@ -1,0 +1,1112 @@
+Running main() from gtest_main.cc
+Note: This is test shard 1 of 3.
+[==========] Running 181 tests from 62 test cases.
+[----------] Global test environment set-up.
+[----------] 7 tests from ContCmdSdtTest
+[ RUN      ] ContCmdSdtTest.add_sdt_reconf_mode_autodated_sdts_removed
+[       OK ] ContCmdSdtTest.add_sdt_reconf_mode_autodated_sdts_removed (211 ms)
+[ RUN      ] ContCmdSdtTest.rem_sdt_broadcast_mode_system_ports_closed
+[       OK ] ContCmdSdtTest.rem_sdt_broadcast_mode_system_ports_closed (151 ms)
+[ RUN      ] ContCmdSdtTest.add_sdt_wrong_opcode
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] ContCmdSdtTest.add_sdt_wrong_opcode (151 ms)
+[ RUN      ] ContCmdSdtTest.check_nvme_connected_host_query
+[       OK ] ContCmdSdtTest.check_nvme_connected_host_query (145 ms)
+[ RUN      ] ContCmdSdtTest.check_faulty_port
+[       OK ] ContCmdSdtTest.check_faulty_port (136 ms)
+[ RUN      ] ContCmdSdtTest.remove_current_sdt_during_mm
+[       OK ] ContCmdSdtTest.remove_current_sdt_during_mm (135 ms)
+[ RUN      ] ContCmdSdtTest.check_enter_mm_waits_closed_listeners
+[       OK ] ContCmdSdtTest.check_enter_mm_waits_closed_listeners (1150 ms)
+[----------] 7 tests from ContCmdSdtTest (2082 ms total)
+
+[----------] 2 tests from ContCmdHostTest
+[ RUN      ] ContCmdHostTest.SimpleAddHostTest
+[       OK ] ContCmdHostTest.SimpleAddHostTest (136 ms)
+[ RUN      ] ContCmdHostTest.OutdatedHostsNotInReconfigureTest
+[       OK ] ContCmdHostTest.OutdatedHostsNotInReconfigureTest (136 ms)
+[----------] 2 tests from ContCmdHostTest (272 ms total)
+
+[----------] 7 tests from ContCmdVolumeTest
+[ RUN      ] ContCmdVolumeTest.add_update_remove_test
+[       OK ] ContCmdVolumeTest.add_update_remove_test (135 ms)
+[ RUN      ] ContCmdVolumeTest.add_remove_host_to_vol_mapping
+[       OK ] ContCmdVolumeTest.add_remove_host_to_vol_mapping (136 ms)
+[ RUN      ] ContCmdVolumeTest.check_mapping_before_removing_outdated_volumes
+[       OK ] ContCmdVolumeTest.check_mapping_before_removing_outdated_volumes (141 ms)
+[ RUN      ] ContCmdVolumeTest.update_mappings_that_belong_to_current_sdt
+[       OK ] ContCmdVolumeTest.update_mappings_that_belong_to_current_sdt (146 ms)
+[ RUN      ] ContCmdVolumeTest.update_out_of_con_target_mappings_during_reconfig
+[       OK ] ContCmdVolumeTest.update_out_of_con_target_mappings_during_reconfig (136 ms)
+[ RUN      ] ContCmdVolumeTest.update_with_resv_register_transaction
+[       OK ] ContCmdVolumeTest.update_with_resv_register_transaction (136 ms)
+[ RUN      ] ContCmdVolumeTest.update_in_reconf_with_resv_info
+[       OK ] ContCmdVolumeTest.update_in_reconf_with_resv_info (135 ms)
+[----------] 7 tests from ContCmdVolumeTest (965 ms total)
+
+[----------] 1 test from ContCmdDmCopyJob
+[ RUN      ] ContCmdDmCopyJob.OutdatedDmCopyJobsRemovedInReconfigureTest
+[       OK ] ContCmdDmCopyJob.OutdatedDmCopyJobsRemovedInReconfigureTest (151 ms)
+[----------] 1 test from ContCmdDmCopyJob (151 ms total)
+
+[----------] 2 tests from ContCmdDmRemoteSystem
+[ RUN      ] ContCmdDmRemoteSystem.SimpleAddRemoteSystemTest
+[       OK ] ContCmdDmRemoteSystem.SimpleAddRemoteSystemTest (141 ms)
+[ RUN      ] ContCmdDmRemoteSystem.OutdatedDmRemoteSystemsNotInReconfigureTest
+[       OK ] ContCmdDmRemoteSystem.OutdatedDmRemoteSystemsNotInReconfigureTest (141 ms)
+[----------] 2 tests from ContCmdDmRemoteSystem (282 ms total)
+
+[----------] 2 tests from SdtMngrTest
+[ RUN      ] SdtMngrTest.acquire_release_sdt_object
+[       OK ] SdtMngrTest.acquire_release_sdt_object (30 ms)
+[ RUN      ] SdtMngrTest.pCurrSdt_test_set_and_get
+[       OK ] SdtMngrTest.pCurrSdt_test_set_and_get (36 ms)
+[----------] 2 tests from SdtMngrTest (66 ms total)
+
+[----------] 5 tests from HostMngrTest
+[ RUN      ] HostMngrTest.SimpleUpdateHostTest
+[       OK ] HostMngrTest.SimpleUpdateHostTest (141 ms)
+[ RUN      ] HostMngrTest.SimplePotentialHostsTest
+[       OK ] HostMngrTest.SimplePotentialHostsTest (141 ms)
+[ RUN      ] HostMngrTest.CheckPotentialHostTurnedToConfiguredHost
+[       OK ] HostMngrTest.CheckPotentialHostTurnedToConfiguredHost (140 ms)
+[ RUN      ] HostMngrTest.CheckPersistentDiscoveryConnectionOperations
+[       OK ] HostMngrTest.CheckPersistentDiscoveryConnectionOperations (141 ms)
+[ RUN      ] HostMngrTest.CheckConnectivityGoalChange
+[       OK ] HostMngrTest.CheckConnectivityGoalChange (151 ms)
+[----------] 5 tests from HostMngrTest (714 ms total)
+
+[----------] 3 tests from RangeMngrTest
+[ RUN      ] RangeMngrTest.SimpleIOContainerTest
+[       OK ] RangeMngrTest.SimpleIOContainerTest (136 ms)
+[ RUN      ] RangeMngrTest.OnlyOneUpdateCtrlIdsRequestTest
+[       OK ] RangeMngrTest.OnlyOneUpdateCtrlIdsRequestTest (146 ms)
+[ RUN      ] RangeMngrTest.MutualExclusionInReconfig
+[       OK ] RangeMngrTest.MutualExclusionInReconfig (141 ms)
+[----------] 3 tests from RangeMngrTest (423 ms total)
+
+[----------] 2 tests from SubsystemMngrTest
+[ RUN      ] SubsystemMngrTest.CheckPersistentDiscoveryControllers
+[       OK ] SubsystemMngrTest.CheckPersistentDiscoveryControllers (136 ms)
+[ RUN      ] SubsystemMngrTest.CheckConsistencyBetweenReleaseAndAllocateIdsWithDiscoveryController
+[       OK ] SubsystemMngrTest.CheckConsistencyBetweenReleaseAndAllocateIdsWithDiscoveryController (206 ms)
+[----------] 2 tests from SubsystemMngrTest (342 ms total)
+
+[----------] 2 tests from PortMngrTest
+[ RUN      ] PortMngrTest.SimpleTest
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] PortMngrTest.SimpleTest (151 ms)
+[ RUN      ] PortMngrTest.CloseFaultyPort
+[       OK ] PortMngrTest.CloseFaultyPort (141 ms)
+[----------] 2 tests from PortMngrTest (292 ms total)
+
+[----------] 1 test from ConnectivityGoalTest
+[ RUN      ] ConnectivityGoalTest.TestEntriesDontExceedLimit
+[       OK ] ConnectivityGoalTest.TestEntriesDontExceedLimit (140 ms)
+[----------] 1 test from ConnectivityGoalTest (140 ms total)
+
+[----------] 2 tests from SDT_Cont_Cmd_Test
+[ RUN      ] SDT_Cont_Cmd_Test.TestDeadlockOperation
+[       OK ] SDT_Cont_Cmd_Test.TestDeadlockOperation (227 ms)
+[ RUN      ] SDT_Cont_Cmd_Test.TestWriteCmdsSequencing
+[       OK ] SDT_Cont_Cmd_Test.TestWriteCmdsSequencing (30 ms)
+[----------] 2 tests from SDT_Cont_Cmd_Test (257 ms total)
+
+[----------] 1 test from SDT_XIOS_Infra_Test
+[ RUN      ] SDT_XIOS_Infra_Test.IxdPoolTest
+[       OK ] SDT_XIOS_Infra_Test.IxdPoolTest (247 ms)
+[----------] 1 test from SDT_XIOS_Infra_Test (247 ms total)
+
+[----------] 1 test from IntrusiveListTest
+[ RUN      ] IntrusiveListTest.IllegalOperations
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] IntrusiveListTest.IllegalOperations (98 ms)
+[----------] 1 test from IntrusiveListTest (98 ms total)
+
+[----------] 2 tests from DiscoveryNvmfTest
+[ RUN      ] DiscoveryNvmfTest.DoubleRequest
+[       OK ] DiscoveryNvmfTest.DoubleRequest (40 ms)
+[ RUN      ] DiscoveryNvmfTest.Non1KMultipleRequests
+[       OK ] DiscoveryNvmfTest.Non1KMultipleRequests (30 ms)
+[----------] 2 tests from DiscoveryNvmfTest (70 ms total)
+
+[----------] 3 tests from idCtrlIoCmdSetTest
+[ RUN      ] idCtrlIoCmdSetTest.noIOSet
+[       OK ] idCtrlIoCmdSetTest.noIOSet (36 ms)
+[ RUN      ] idCtrlIoCmdSetTest.writeZeroesOkSize
+[       OK ] idCtrlIoCmdSetTest.writeZeroesOkSize (30 ms)
+[ RUN      ] idCtrlIoCmdSetTest.dsmDMRLOverLimit
+[       OK ] idCtrlIoCmdSetTest.dsmDMRLOverLimit (30 ms)
+[----------] 3 tests from idCtrlIoCmdSetTest (96 ms total)
+
+[----------] 2 tests from DiscoverControllerTest
+[ RUN      ] DiscoverControllerTest.ConnectWithNonZeroKATO
+[       OK ] DiscoverControllerTest.ConnectWithNonZeroKATO (51 ms)
+[ RUN      ] DiscoverControllerTest.ConnectWithZeroKATO
+[       OK ] DiscoverControllerTest.ConnectWithZeroKATO (35 ms)
+[----------] 2 tests from DiscoverControllerTest (86 ms total)
+
+[----------] 2 tests from ControlTest
+[ RUN      ] ControlTest.CheckValidConnection
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] ControlTest.CheckValidConnection (162 ms)
+[ RUN      ] ControlTest.CheckPersistentDiscoveryConnectionForPotentialHost
+[       OK ] ControlTest.CheckPersistentDiscoveryConnectionForPotentialHost (146 ms)
+[----------] 2 tests from ControlTest (308 ms total)
+
+[----------] 1 test from NGUIDTest
+[ RUN      ] NGUIDTest.SystemPart
+[       OK ] NGUIDTest.SystemPart (30 ms)
+[----------] 1 test from NGUIDTest (30 ms total)
+
+[----------] 3 tests from ntProtocolTimerTest
+[ RUN      ] ntProtocolTimerTest.timerAbort
+
+2024/03/30 04:50:42.956537 LOW:71d000027abf:mosOsThrd_StartFunc:00614: Stopping thread (MOS-UMT-SCHED) tid 162495
+2024/03/30 04:50:42.956634 MED:71d000027abf:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b38001330
+2024/03/30 04:50:42.956639 MED:71d000027abf:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b2c000dd0
+2024/03/30 04:50:42.956642 LOW:71d000027abf:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x295c760 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:42.956654 MED:71d000027abf:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x295c760
+2024/03/30 04:50:42.956658 LOW:71d000027abf:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x2943a70
+2024/03/30 04:50:42.956665 MED:71d000027abf:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b38001470
+2024/03/30 04:50:42.956668 MED:71d000027abf:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b38001330
+2024/03/30 04:50:42.956669 LOW:71d000027abf:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x29618d0 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:42.956675 MED:71d000027abf:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x29618d0
+2024/03/30 04:50:42.956677 LOW:71d000027abf:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x2b95090
+2024/03/30 04:50:42.956801 LOW:71d000027ac0:mosOsThrd_StartFunc:00614: Stopping thread (MOS-UMT-SCHED) tid 162496
+2024/03/30 04:50:42.956818 MED:71d000027ac0:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b259418b0
+2024/03/30 04:50:42.956823 MED:71d000027ac0:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b38001470
+2024/03/30 04:50:42.956826 LOW:71d000027ac0:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x2943b80 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:42.956835 MED:71d000027ac0:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x2943b80
+2024/03/30 04:50:42.956838 LOW:71d000027ac0:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x29249b0
+2024/03/30 04:50:42.956843 MED:71d000027ac0:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b259419c0
+2024/03/30 04:50:42.956846 MED:71d000027ac0:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b259418b0
+2024/03/30 04:50:42.956848 LOW:71d000027ac0:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x29381a0 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:42.956854 MED:71d000027ac0:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x29381a0
+2024/03/30 04:50:42.956856 LOW:71d000027ac0:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x291f400
+2024/03/30 04:50:42.956987 LOW:71d000027ac1:mosOsThrd_StartFunc:00614: Stopping thread (MOS-UMT-SCHED) tid 162497
+2024/03/30 04:50:42.957000 MED:71d000027ac1:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b3193aab0
+2024/03/30 04:50:42.957004 MED:71d000027ac1:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b259419c0
+2024/03/30 04:50:42.957006 LOW:71d000027ac1:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x2a83970 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:42.957014 MED:71d000027ac1:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x2a83970
+2024/03/30 04:50:42.957016 LOW:71d000027ac1:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x2908550
+2024/03/30 04:50:42.957021 MED:71d000027ac1:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b3193ab90
+2024/03/30 04:50:42.957023 MED:71d000027ac1:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b3193aab0
+2024/03/30 04:50:42.957025 LOW:71d000027ac1:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x2a88670 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:42.957030 MED:71d000027ac1:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x2a88670
+2024/03/30 04:50:42.957032 LOW:71d000027ac1:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x294ede0
+2024/03/30 04:50:42.957088 LOW:71d000027ac2:mosOsThrd_StartFunc:00614: Stopping thread (MOS-UMT-SCHED) tid 162498
+2024/03/30 04:50:42.957123 MED:71d000027ac2:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b2c000dd0
+2024/03/30 04:50:42.957126 MED:71d000027ac2:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b3193ab90
+2024/03/30 04:50:42.957127 LOW:71d000027ac2:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x2a8d370 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:42.957133 MED:71d000027ac2:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x2a8d370
+2024/03/30 04:50:42.957135 LOW:71d000027ac2:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x295be80
+2024/03/30 04:50:42.957139 MED:71d000027ac2:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b2c000e80
+2024/03/30 04:50:42.957142 MED:71d000027ac2:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b2c000dd0
+2024/03/30 04:50:42.957143 LOW:71d000027ac2:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x2a18220 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:42.957148 MED:71d000027ac2:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x2a18220
+2024/03/30 04:50:42.957150 LOW:71d000027ac2:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x295bf90
+2024/03/30 04:50:42.957174 LOW:000000000000:mosUmtSchedThrd_UpdateOngoingOps:00734: Now guarding 4 threads.
+2024/03/30 04:50:42.958135 LOW:71d000027abe:schedThrdGuard_SampleLivnes:02148: Sched guard thread is now dying
+2024/03/30 04:50:42.958146 LOW:71d000027abe:mosOsThrd_StartFunc:00614: Stopping thread (schedThrd guard) tid 162494
+2024/03/30 04:50:42.958709 LOW:000000000000:mosSecurityLayer_Destroy:00291: MOS Security library terminated
+2024/03/30 04:50:42.958926 LOW:71d000027abd:mosOsThrd_StartFunc:00614: Stopping thread (MOS (mos_timed_action.c): timed) tid 162493
+2024/03/30 04:50:42.959063 LOW:000000000000:detourBundleRegistry_DeActivateDetourBundle:00578: Detour Bundle mos_io_bundle was de-activated with rc NO_CHANGE.
+2024/03/30 04:50:42.959071 LOW:000000000000:detourBundleRegistry_UnRegisterDetourBundle:00439: Detour Bundle mos_io_bundle was unRegistered.
+ 
+2024/03/30 04:50:42.959829 LOW:000000000000:compressionEngineAllocator_Destroy:00283: SRM: The Compression Engine Allocator was destroyed maxConfigurations:20, maxOsThreads:32
+2024/03/30 04:50:42.959831 MED:000000000000:sizeReductionManager_DestroyIntrn:00523: SRM: SRM was destroyed
+2024/03/30 04:50:42.959871 LOW:71d000027abc:mosOsThrd_StartFunc:00614: Stopping thread (MOS (mos_cyclic_file.c): cyclic) tid 162492
+2024/03/30 04:50:42.960064 LOW:71d000027abb:mosOsThrd_StartFunc:00614: Stopping thread (Default blocker) tid 162491
+2024/03/30 04:50:42.960116 LOW:71d000027aba:mosOsThrd_StartFunc:00614: Stopping thread (mosTimer) tid 162490
+2024/03/30 04:50:42.965126 LOW:71d000027ab9:mosOsThrd_StartFunc:00614: Stopping thread (MOS (mos_ticks.c): ticker threa) tid 162489
+2024/03/30 04:50:42.965158 MED:000000000000:mosOsThrdLayer_DestroyAllAllocators:01383: free active PMosOsThrdAddrMapper 0x7f6b2c000e80[       OK ] ntProtocolTimerTest.timerAbort (7041 ms)
+[ RUN      ] ntProtocolTimerTest.controllerKAtimerWithLargeKato
+
+2024/03/30 04:50:42.965411 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry AFS_TaskIoDoneRc will not be configured
+2024/03/30 04:50:42.965415 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965416 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry AFS_TaskTimedIoDone will not be configured
+2024/03/30 04:50:42.965417 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965418 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry ChooseSendPath will not be configured
+2024/03/30 04:50:42.965420 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965421 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry CreateKernelSocket will not be configured
+2024/03/30 04:50:42.965422 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965423 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry NAFS_JournalCommitRc will not be configured
+2024/03/30 04:50:42.965424 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965425 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry PhyDevWriteIODelay will not be configured
+2024/03/30 04:50:42.965426 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965427 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry PhyToothMapHardenAllIODelay will not be configured
+2024/03/30 04:50:42.965428 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965429 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry SocketDoIo will not be configured
+2024/03/30 04:50:42.965430 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965432 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry T10Dif_UtHook_IohPriWr1Encrypt will not be configured
+2024/03/30 04:50:42.965432 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965434 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry T10Dif_UtHook_IohSecWriteEncrypt will not be configured
+2024/03/30 04:50:42.965435 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965436 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry afsPersistencyFlush will not be configured
+2024/03/30 04:50:42.965437 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965438 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry afsPersistencyRead will not be configured
+2024/03/30 04:50:42.965439 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965440 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry afsPersistencyWrite will not be configured
+2024/03/30 04:50:42.965441 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965442 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry devPersistencyRead will not be configured
+2024/03/30 04:50:42.965452 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965453 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry devPersistencyWrite will not be configured
+2024/03/30 04:50:42.965454 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965455 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry netPath_ServerExchangeNewCon_Hook will not be configured
+2024/03/30 04:50:42.965456 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965457 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry osNet_Recv will not be configured
+2024/03/30 04:50:42.965458 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965459 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry osNet_RecvV will not be configured
+2024/03/30 04:50:42.965460 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965461 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry osNet_Send will not be configured
+2024/03/30 04:50:42.965462 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965463 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry osNet_SendV will not be configured
+2024/03/30 04:50:42.965464 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965465 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry phyDev_HardenDeviceHeaderAndScanCounters will not be configured
+2024/03/30 04:50:42.965466 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965467 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry schedPoint will not be configured
+2024/03/30 04:50:42.965468 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965469 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry suspendUThread will not be configured
+2024/03/30 04:50:42.965470 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:42.965496 LOW:000000000000:mosCpu_Init:00079: eax=40000010, ebx=61774d56, ecx=4d566572, edx=65726177
+2024/03/30 04:50:42.965522 LOW:000000000000:mosOsThrd_RegisterBacktraceSignal:00488: Backtrace signal successfully registered
+2024/03/30 04:50:42.965594 LOW:71d000027da7:mosOsThrd_StartFunc:00579: Starting thread (MOS (mos_ticks.c): ticker threa) tid 163239
+2024/03/30 04:50:42.965931 LOW:71d000027da8:mosOsThrd_StartFunc:00579: Starting thread (mosTimer) tid 163240
+2024/03/30 04:50:42.965968 MED:000000000000:mosMemPool_CreateEx:00665: Allocate 20400000 for memory pool SmallIOVPool, 30000 blocks of 680
+2024/03/30 04:50:42.966005 LOW:71d000027da9:mosOsThrd_StartFunc:00579: Starting thread (Default blocker) tid 163241
+2024/03/30 04:50:42.969272 LOW:000000000000:mosMemPool_CreateEx:00725: Mempool named SmallIOVPool allocated at 0x3cc7190. More info: pMemPool:0x21f30b0, blockSizeInBytes:680, allocPerBlock:680, numBlocks:30000, mallocSize:20400000, alignment:0, flags:4, pMemAlignedStart:0x3cc7190, pMemEnd:0x503b910
+2024/03/30 04:50:42.990709 MED:000000000000:mosMemPool_CreateEx:00665: Allocate 640 for memory pool SRMconfsMemPool, 20 blocks of 32
+2024/03/30 04:50:42.990753 LOW:000000000000:mosMemPool_CreateEx:00725: Mempool named SRMconfsMemPool allocated at 0x2955ab0. More info: pMemPool:0x2212d60, blockSizeInBytes:32, allocPerBlock:32, numBlocks:20, mallocSize:640, alignment:0, flags:6, pMemAlignedStart:0x2955ab0, pMemEnd:0x2955d30
+2024/03/30 04:50:42.990756 MED:000000000000:mosMemPool_CreateEx:00665: Allocate 160 for memory pool SRMcompressiontechniqueConfs, 20 blocks of 8
+2024/03/30 04:50:42.990710 LOW:71d000027daa:mosOsThrd_StartFunc:00579: Starting thread (MOS (mos_cyclic_file.c): cyclic) tid 163242
+2024/03/30 04:50:42.990761 LOW:000000000000:mosMemPool_CreateEx:00725: Mempool named SRMcompressiontechniqueConfs allocated at 0x295bd50. More info: pMemPool:0x2212ec0, blockSizeInBytes:8, allocPerBlock:8, numBlocks:20, mallocSize:160, alignment:0, flags:6, pMemAlignedStart:0x295bd50, pMemEnd:0x295bdf0
+2024/03/30 04:50:42.990764 LOW:000000000000:compressionEngineAllocator_Init:00178: SRM: Allocated OST context magic:4070572178
+2024/03/30 04:50:42.990812 MED:000000000000:mosMemPool_CreateEx:00665: Allocate 5120 for memory pool SRM_CEA_OSTCE_Pool, 32 blocks of 160
+2024/03/30 04:50:42.990817 LOW:000000000000:mosMemPool_CreateEx:00725: Mempool named SRM_CEA_OSTCE_Pool allocated at 0x2958680. More info: pMemPool:0x2213040, blockSizeInBytes:160, allocPerBlock:160, numBlocks:32, mallocSize:5120, alignment:0, flags:6, pMemAlignedStart:0x2958680, pMemEnd:0x2959a80
+2024/03/30 04:50:42.990819 LOW:000000000000:compressionEngineAllocator_Init:00217: SRM: The Compression Engine Allocator Initialization was successful, maxConfigurations:20, maxOsThreads:32 OST context magic:4070572178
+2024/03/30 04:50:42.990821 MED:000000000000:sizeReductionManager_InitIntrn:00439: SRM: SRM was created successfully pSched: (nil), numUmts: 1 ,maxConfigurations: 20 , maxOSThreads: 32.
+2024/03/30 04:50:42.996835 MED:000000000000:nt_protocol_controller_ka_timer_start:01796: Starting KA timer 4000 ms, cntlid 0 
+2024/03/30 04:50:45.997026 MED:71d000027da8:nt_protocol_callback_ka_timer_expiry:01760: KA timer expired, cntlid 0 
+2024/03/30 04:50:45.997040 MED:71d000027da8:nt_protocol_callback_ka_timer_expiry:01770: Shutting down IO controller, cntlid 0 , num_of_active_queues 0
+2024/03/30 04:50:48.997002 LOW:71d000027dad:mosOsThrd_StartFunc:00614: Stopping thread (MOS-UMT-SCHED) tid 163245
+2024/03/30 04:50:48.997022 MED:71d000027dad:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b2c02f6e0
+2024/03/30 04:50:48.997028 MED:71d000027dad:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b38000c10
+2024/03/30 04:50:48.997031 LOW:71d000027dad:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x295c760 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:48.997041 MED:71d000027dad:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x295c760
+2024/03/30 04:50:48.997043 LOW:71d000027dad:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x2922090
+2024/03/30 04:50:48.997048 MED:71d000027dad:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b2c030e00
+2024/03/30 04:50:48.997051 MED:71d000027dad:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b2c02f6e0
+2024/03/30 04:50:48.997052 LOW:71d000027dad:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x29618d0 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:48.997058 MED:71d000027dad:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x29618d0
+2024/03/30 04:50:48.997060 LOW:71d000027dad:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x2961460
+2024/03/30 04:50:48.997156 LOW:71d000027dae:mosOsThrd_StartFunc:00614: Stopping thread (MOS-UMT-SCHED) tid 163246
+2024/03/30 04:50:48.997172 MED:71d000027dae:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b3193aab0
+2024/03/30 04:50:48.997177 MED:71d000027dae:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b2c030e00
+2024/03/30 04:50:48.997218 LOW:71d000027dae:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x2943a70 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:48.997227 MED:71d000027dae:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x2943a70
+2024/03/30 04:50:48.997229 LOW:71d000027dae:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x2961570
+2024/03/30 04:50:48.997233 MED:71d000027dae:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b3193abc0
+2024/03/30 04:50:48.997236 MED:71d000027dae:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b3193aab0
+2024/03/30 04:50:48.997237 LOW:71d000027dae:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x29381a0 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:48.997243 MED:71d000027dae:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x29381a0
+2024/03/30 04:50:48.997244 LOW:71d000027dae:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x2961680
+2024/03/30 04:50:48.997335 LOW:71d000027daf:mosOsThrd_StartFunc:00614: Stopping thread (MOS-UMT-SCHED) tid 163247
+2024/03/30 04:50:48.997348 MED:71d000027daf:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b25941910
+2024/03/30 04:50:48.997353 MED:71d000027daf:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b3193abc0
+2024/03/30 04:50:48.997356 LOW:71d000027daf:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x2a83970 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:48.997364 MED:71d000027daf:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x2a83970
+2024/03/30 04:50:48.997367 LOW:71d000027daf:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x2c96440
+2024/03/30 04:50:48.997371 MED:71d000027daf:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b259419f0
+2024/03/30 04:50:48.997375 MED:71d000027daf:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b25941910
+2024/03/30 04:50:48.997376 LOW:71d000027daf:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x2a88670 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:48.997383 MED:71d000027daf:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x2a88670
+2024/03/30 04:50:48.997385 LOW:71d000027daf:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x2c96550
+2024/03/30 04:50:48.997468 LOW:71d000027db0:mosOsThrd_StartFunc:00614: Stopping thread (MOS-UMT-SCHED) tid 163248
+2024/03/30 04:50:48.997481 MED:71d000027db0:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b380011e0
+2024/03/30 04:50:48.997486 MED:71d000027db0:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b259419f0
+2024/03/30 04:50:48.997488 LOW:71d000027db0:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x2a8d370 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:48.997496 MED:71d000027db0:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x2a8d370
+2024/03/30 04:50:48.997499 LOW:71d000027db0:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x2c96660
+2024/03/30 04:50:48.997504 MED:71d000027db0:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b38000c10
+2024/03/30 04:50:48.997507 MED:71d000027db0:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b380011e0
+2024/03/30 04:50:48.997509 LOW:71d000027db0:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x2a18220 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:48.997515 MED:71d000027db0:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x2a18220
+2024/03/30 04:50:48.997518 LOW:71d000027db0:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x2c96770
+2024/03/30 04:50:48.997546 LOW:000000000000:mosUmtSchedThrd_UpdateOngoingOps:00734: Now guarding 4 threads.
+2024/03/30 04:50:48.998358 LOW:71d000027dac:schedThrdGuard_SampleLivnes:02148: Sched guard thread is now dying
+2024/03/30 04:50:48.998369 LOW:71d000027dac:mosOsThrd_StartFunc:00614: Stopping thread (schedThrd guard) tid 163244
+2024/03/30 04:50:48.998945 LOW:000000000000:mosSecurityLayer_Destroy:00291: MOS Security library terminated
+2024/03/30 04:50:48.999025 LOW:71d000027dab:mosOsThrd_StartFunc:00614: Stopping thread (MOS (mos_timed_action.c): timed) tid 163243
+2024/03/30 04:50:48.999155 LOW:000000000000:detourBundleRegistry_DeActivateDetourBundle:00578: Detour Bundle mos_io_bundle was de-activated with rc NO_CHANGE.
+2024/03/30 04:50:48.999163 LOW:000000000000:detourBundleRegistry_UnRegisterDetourBundle:00439: Detour Bundle mos_io_bundle was unRegistered.
+ 
+2024/03/30 04:50:48.999956 LOW:000000000000:compressionEngineAllocator_Destroy:00283: SRM: The Compression Engine Allocator was destroyed maxConfigurations:20, maxOsThreads:32
+2024/03/30 04:50:48.999959 MED:000000000000:sizeReductionManager_DestroyIntrn:00523: SRM: SRM was destroyed
+2024/03/30 04:50:49.000017 LOW:71d000027daa:mosOsThrd_StartFunc:00614: Stopping thread (MOS (mos_cyclic_file.c): cyclic) tid 163242
+2024/03/30 04:50:49.000115 LOW:71d000027da9:mosOsThrd_StartFunc:00614: Stopping thread (Default blocker) tid 163241
+2024/03/30 04:50:49.000170 LOW:71d000027da8:mosOsThrd_StartFunc:00614: Stopping thread (mosTimer) tid 163240
+2024/03/30 04:50:49.001324 LOW:71d000027da7:mosOsThrd_StartFunc:00614: Stopping thread (MOS (mos_ticks.c): ticker threa) tid 163239
+2024/03/30 04:50:49.001357 MED:000000000000:mosOsThrdLayer_DestroyAllAllocators:01383: free active PMosOsThrdAddrMapper 0x7f6b38000c10[       OK ] ntProtocolTimerTest.controllerKAtimerWithLargeKato (6036 ms)
+[ RUN      ] ntProtocolTimerTest.controllerKAtimerRestart
+
+2024/03/30 04:50:49.001599 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry AFS_TaskIoDoneRc will not be configured
+2024/03/30 04:50:49.001602 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001604 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry AFS_TaskTimedIoDone will not be configured
+2024/03/30 04:50:49.001605 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001606 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry ChooseSendPath will not be configured
+2024/03/30 04:50:49.001607 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001608 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry CreateKernelSocket will not be configured
+2024/03/30 04:50:49.001609 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001611 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry NAFS_JournalCommitRc will not be configured
+2024/03/30 04:50:49.001611 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001613 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry PhyDevWriteIODelay will not be configured
+2024/03/30 04:50:49.001614 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001615 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry PhyToothMapHardenAllIODelay will not be configured
+2024/03/30 04:50:49.001616 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001617 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry SocketDoIo will not be configured
+2024/03/30 04:50:49.001618 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001619 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry T10Dif_UtHook_IohPriWr1Encrypt will not be configured
+2024/03/30 04:50:49.001620 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001621 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry T10Dif_UtHook_IohSecWriteEncrypt will not be configured
+2024/03/30 04:50:49.001622 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001623 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry afsPersistencyFlush will not be configured
+2024/03/30 04:50:49.001624 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001625 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry afsPersistencyRead will not be configured
+2024/03/30 04:50:49.001626 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001627 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry afsPersistencyWrite will not be configured
+2024/03/30 04:50:49.001628 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001629 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry devPersistencyRead will not be configured
+2024/03/30 04:50:49.001636 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001637 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry devPersistencyWrite will not be configured
+2024/03/30 04:50:49.001638 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001639 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry netPath_ServerExchangeNewCon_Hook will not be configured
+2024/03/30 04:50:49.001640 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001641 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry osNet_Recv will not be configured
+2024/03/30 04:50:49.001642 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001643 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry osNet_RecvV will not be configured
+2024/03/30 04:50:49.001644 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001645 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry osNet_Send will not be configured
+2024/03/30 04:50:49.001646 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001647 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry osNet_SendV will not be configured
+2024/03/30 04:50:49.001648 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001650 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry phyDev_HardenDeviceHeaderAndScanCounters will not be configured
+2024/03/30 04:50:49.001650 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001652 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry schedPoint will not be configured
+2024/03/30 04:50:49.001652 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001654 LOW:000000000000:mosUt_ConfigureEntry:00320: WARNING: Threshold function ID (11) exceeds allowed range. entry suspendUThread will not be configured
+2024/03/30 04:50:49.001655 LOW:000000000000:mosUt_DigestConfArray:00415: Failed to configure entry i due to PARAMETER_OUT_OF_RANGE
+2024/03/30 04:50:49.001680 LOW:000000000000:mosCpu_Init:00079: eax=40000010, ebx=61774d56, ecx=4d566572, edx=65726177
+2024/03/30 04:50:49.001706 LOW:000000000000:mosOsThrd_RegisterBacktraceSignal:00488: Backtrace signal successfully registered
+2024/03/30 04:50:49.001793 LOW:71d000027fe0:mosOsThrd_StartFunc:00579: Starting thread (MOS (mos_ticks.c): ticker threa) tid 163808
+2024/03/30 04:50:49.002105 LOW:71d000027fe1:mosOsThrd_StartFunc:00579: Starting thread (mosTimer) tid 163809
+2024/03/30 04:50:49.002137 MED:000000000000:mosMemPool_CreateEx:00665: Allocate 20400000 for memory pool SmallIOVPool, 30000 blocks of 680
+2024/03/30 04:50:49.002145 LOW:71d000027fe2:mosOsThrd_StartFunc:00579: Starting thread (Default blocker) tid 163810
+2024/03/30 04:50:49.002826 LOW:000000000000:mosMemPool_CreateEx:00725: Mempool named SmallIOVPool allocated at 0x3cc7190. More info: pMemPool:0x21f30b0, blockSizeInBytes:680, allocPerBlock:680, numBlocks:30000, mallocSize:20400000, alignment:0, flags:4, pMemAlignedStart:0x3cc7190, pMemEnd:0x503b910
+2024/03/30 04:50:49.024320 MED:000000000000:mosMemPool_CreateEx:00665: Allocate 640 for memory pool SRMconfsMemPool, 20 blocks of 32
+2024/03/30 04:50:49.024365 LOW:000000000000:mosMemPool_CreateEx:00725: Mempool named SRMconfsMemPool allocated at 0x2955ab0. More info: pMemPool:0x2212d60, blockSizeInBytes:32, allocPerBlock:32, numBlocks:20, mallocSize:640, alignment:0, flags:6, pMemAlignedStart:0x2955ab0, pMemEnd:0x2955d30
+2024/03/30 04:50:49.024370 MED:000000000000:mosMemPool_CreateEx:00665: Allocate 160 for memory pool SRMcompressiontechniqueConfs, 20 blocks of 8
+2024/03/30 04:50:49.024374 LOW:000000000000:mosMemPool_CreateEx:00725: Mempool named SRMcompressiontechniqueConfs allocated at 0x2c96310. More info: pMemPool:0x2212ec0, blockSizeInBytes:8, allocPerBlock:8, numBlocks:20, mallocSize:160, alignment:0, flags:6, pMemAlignedStart:0x2c96310, pMemEnd:0x2c963b0
+2024/03/30 04:50:49.024330 LOW:71d000027fe3:mosOsThrd_StartFunc:00579: Starting thread (MOS (mos_cyclic_file.c): cyclic) tid 163811
+2024/03/30 04:50:49.024377 LOW:000000000000:compressionEngineAllocator_Init:00178: SRM: Allocated OST context magic:183566484
+2024/03/30 04:50:49.024401 MED:000000000000:mosMemPool_CreateEx:00665: Allocate 5120 for memory pool SRM_CEA_OSTCE_Pool, 32 blocks of 160
+2024/03/30 04:50:49.024414 LOW:000000000000:mosMemPool_CreateEx:00725: Mempool named SRM_CEA_OSTCE_Pool allocated at 0x2958680. More info: pMemPool:0x2213040, blockSizeInBytes:160, allocPerBlock:160, numBlocks:32, mallocSize:5120, alignment:0, flags:6, pMemAlignedStart:0x2958680, pMemEnd:0x2959a80
+2024/03/30 04:50:49.024416 LOW:000000000000:compressionEngineAllocator_Init:00217: SRM: The Compression Engine Allocator Initialization was successful, maxConfigurations:20, maxOsThreads:32 OST context magic:183566484
+2024/03/30 04:50:49.024418 MED:000000000000:sizeReductionManager_InitIntrn:00439: SRM: SRM was created successfully pSched: (nil), numUmts: 1 ,maxConfigurations: 20 , maxOSThreads: 32.
+2024/03/30 04:50:49.029982 MED:000000000000:nt_protocol_controller_ka_timer_start:01796: Starting KA timer 6000 ms, cntlid 0 
+2024/03/30 04:50:49.029993 MED:000000000000:nt_protocol_controller_ka_timer_set:01854: Setting KA timer 5 ms, cntlid 0 
+2024/03/30 04:50:49.062946 MED:71d000027fe1:nt_protocol_callback_ka_timer_expiry:01760: KA timer expired, cntlid 0 
+2024/03/30 04:50:49.062963 MED:71d000027fe1:nt_protocol_callback_ka_timer_expiry:01770: Shutting down IO controller, cntlid 0 , num_of_active_queues 0
+2024/03/30 04:50:51.030161 LOW:71d000027fe6:mosOsThrd_StartFunc:00614: Stopping thread (MOS-UMT-SCHED) tid 163814
+2024/03/30 04:50:51.030182 MED:71d000027fe6:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b38000ca0
+2024/03/30 04:50:51.030187 MED:71d000027fe6:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b2c02f6e0
+2024/03/30 04:50:51.030190 LOW:71d000027fe6:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x295c760 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:51.030200 MED:71d000027fe6:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x295c760
+2024/03/30 04:50:51.030203 LOW:71d000027fe6:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x2922090
+2024/03/30 04:50:51.030208 MED:71d000027fe6:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b38000de0
+2024/03/30 04:50:51.030211 MED:71d000027fe6:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b38000ca0
+2024/03/30 04:50:51.030213 LOW:71d000027fe6:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x29618d0 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:51.030219 MED:71d000027fe6:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x29618d0
+2024/03/30 04:50:51.030221 LOW:71d000027fe6:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x2961460
+2024/03/30 04:50:51.030308 LOW:71d000027fe7:mosOsThrd_StartFunc:00614: Stopping thread (MOS-UMT-SCHED) tid 163815
+2024/03/30 04:50:51.030323 MED:71d000027fe7:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b259418b0
+2024/03/30 04:50:51.030328 MED:71d000027fe7:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b38000de0
+2024/03/30 04:50:51.030360 LOW:71d000027fe7:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x2943a70 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:51.030369 MED:71d000027fe7:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x2943a70
+2024/03/30 04:50:51.030371 LOW:71d000027fe7:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x2961570
+2024/03/30 04:50:51.030376 MED:71d000027fe7:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b259419c0
+2024/03/30 04:50:51.030379 MED:71d000027fe7:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b259418b0
+2024/03/30 04:50:51.030380 LOW:71d000027fe7:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x29381a0 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:51.030385 MED:71d000027fe7:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x29381a0
+2024/03/30 04:50:51.030387 LOW:71d000027fe7:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x2961680
+2024/03/30 04:50:51.030475 LOW:71d000027fe8:mosOsThrd_StartFunc:00614: Stopping thread (MOS-UMT-SCHED) tid 163816
+2024/03/30 04:50:51.030489 MED:71d000027fe8:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b3193aab0
+2024/03/30 04:50:51.030493 MED:71d000027fe8:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b259419c0
+2024/03/30 04:50:51.030496 LOW:71d000027fe8:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x2a83970 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:51.030505 MED:71d000027fe8:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x2a83970
+2024/03/30 04:50:51.030507 LOW:71d000027fe8:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x503bad0
+2024/03/30 04:50:51.030512 MED:71d000027fe8:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b3193ab90
+2024/03/30 04:50:51.030516 MED:71d000027fe8:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b3193aab0
+2024/03/30 04:50:51.030518 LOW:71d000027fe8:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x2a88670 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:51.030524 MED:71d000027fe8:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x2a88670
+2024/03/30 04:50:51.030526 LOW:71d000027fe8:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x503bbe0
+2024/03/30 04:50:51.030598 LOW:71d000027fe9:mosOsThrd_StartFunc:00614: Stopping thread (MOS-UMT-SCHED) tid 163817
+2024/03/30 04:50:51.030611 MED:71d000027fe9:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b2c000dd0
+2024/03/30 04:50:51.030616 MED:71d000027fe9:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b3193ab90
+2024/03/30 04:50:51.030618 LOW:71d000027fe9:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x2a8d370 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:51.030627 MED:71d000027fe9:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x2a8d370
+2024/03/30 04:50:51.030629 LOW:71d000027fe9:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x503bcf0
+2024/03/30 04:50:51.030634 MED:71d000027fe9:mosOsThrd_DestroyAllocIntern:01963: new MosOsThrdAddrMapper 0x7f6b2c02f6e0
+2024/03/30 04:50:51.030638 MED:71d000027fe9:mosOsThrd_DetachMapper:01747: free PMosOsThrdAddrMapper due to zero refCount 0x7f6b2c000dd0
+2024/03/30 04:50:51.030640 LOW:71d000027fe9:mosMemAllocator_DestroyEx:00389: Destroying allocator 0x2a18220 (OsThrdLocalAlloc) (1 memory chunks)
+2024/03/30 04:50:51.030646 MED:71d000027fe9:mosOsThrd_DestroyAllocIntern:02003: free MosMemAllocator 0x2a18220
+2024/03/30 04:50:51.030648 LOW:71d000027fe9:mosOsThrd_DestroyAllocIntern:02009: free MosOsThrdAllocator 0x503be00
+2024/03/30 04:50:51.030734 LOW:000000000000:mosUmtSchedThrd_UpdateOngoingOps:00734: Now guarding 4 threads.
+2024/03/30 04:50:51.031668 LOW:71d000027fe5:schedThrdGuard_SampleLivnes:02148: Sched guard thread is now dying
+2024/03/30 04:50:51.031674 LOW:71d000027fe5:mosOsThrd_StartFunc:00614: Stopping thread (schedThrd guard) tid 163813
+2024/03/30 04:50:51.032261 LOW:000000000000:mosSecurityLayer_Destroy:00291: MOS Security library terminated
+2024/03/30 04:50:51.032307 LOW:71d000027fe4:mosOsThrd_StartFunc:00614: Stopping thread (MOS (mos_timed_action.c): timed) tid 163812
+2024/03/30 04:50:51.032433 LOW:000000000000:detourBundleRegistry_DeActivateDetourBundle:00578: Detour Bundle mos_io_bundle was de-activated with rc NO_CHANGE.
+2024/03/30 04:50:51.032441 LOW:000000000000:detourBundleRegistry_UnRegisterDetourBundle:00439: Detour Bundle mos_io_bundle was unRegistered.
+ 
+2024/03/30 04:50:51.033212 LOW:000000000000:compressionEngineAllocator_Destroy:00283: SRM: The Compression Engine Allocator was destroyed maxConfigurations:20, maxOsThreads:32
+2024/03/30 04:50:51.033214 MED:000000000000:sizeReductionManager_DestroyIntrn:00523: SRM: SRM was destroyed
+2024/03/30 04:50:51.033245 LOW:71d000027fe3:mosOsThrd_StartFunc:00614: Stopping thread (MOS (mos_cyclic_file.c): cyclic) tid 163811
+2024/03/30 04:50:51.033316 LOW:71d000027fe2:mosOsThrd_StartFunc:00614: Stopping thread (Default blocker) tid 163810
+2024/03/30 04:50:51.033387 LOW:71d000027fe1:mosOsThrd_StartFunc:00614: Stopping thread (mosTimer) tid 163809
+2024/03/30 04:50:51.036392 LOW:71d000027fe0:mosOsThrd_StartFunc:00614: Stopping thread (MOS (mos_ticks.c): ticker threa) tid 163808
+2024/03/30 04:50:51.036422 MED:000000000000:mosOsThrdLayer_DestroyAllAllocators:01383: free active PMosOsThrdAddrMapper 0x7f6b2c02f6e0[       OK ] ntProtocolTimerTest.controllerKAtimerRestart (2035 ms)
+[----------] 3 tests from ntProtocolTimerTest (15112 ms total)
+
+[----------] 2 tests from ntProtocolFeTest
+[ RUN      ] ntProtocolFeTest.formatCQE
+
+2024/03/30 04:50:51.036578 LOW:000000000000:mosCpu_Init:00079: eax=40000010, ebx=61774d56, ecx=4d566572, edx=65726177
+2024/03/30 04:50:51.036608 LOW:000000000000:mosOsThrd_RegisterBacktraceSignal:00488: Backtrace signal successfully registered
+2024/03/30 04:50:51.036676 LOW:71d00002819d:mosOsThrd_StartFunc:00579: Starting thread (MOS (mos_ticks.c): ticker threa) tid 164253
+2024/03/30 04:50:51.036935 LOW:71d00002819e:mosOsThrd_StartFunc:00579: Starting thread (mosTimer) tid 164254
+2024/03/30 04:50:51.037002 LOW:71d00002819f:mosOsThrd_StartFunc:00579: Starting thread (Default blocker) tid 164255
+2024/03/30 04:50:51.058488 MED:000000000000:mosMemPool_CreateEx:00665: Allocate 640 for memory pool SRMconfsMemPool, 20 blocks of 32
+2024/03/30 04:50:51.058489 LOW:71d0000281a8:mosOsThrd_StartFunc:00579: Starting thread (MOS (mos_cyclic_file.c): cyclic) tid 164264
+2024/03/30 04:50:51.058498 LOW:000000000000:mosMemPool_CreateEx:00725: Mempool named SRMconfsMemPool allocated at 0x2955ab0. More info: pMemPool:0x2212d60, blockSizeInBytes:32, allocPerBlock:32, numBlocks:20, mallocSize:640, alignment:0, flags:6, pMemAlignedStart:0x2955ab0, pMemEnd:0x2955d30
+2024/03/30 04:50:51.058502 MED:000000000000:mosMemPool_CreateEx:00665: Allocate 160 for memory pool SRMcompressiontechniqueConfs, 20 blocks of 8
+2024/03/30 04:50:51.058523 LOW:000000000000:mosMemPool_CreateEx:00725: Mempool named SRMcompressiontechniqueConfs allocated at 0x2d9a350. More info: pMemPool:0x2212ec0, blockSizeInBytes:8, allocPerBlock:8, numBlocks:20, mallocSize:160, alignment:0, flags:6, pMemAlignedStart:0x2d9a350, pMemEnd:0x2d9a3f0
+2024/03/30 04:50:51.058525 LOW:000000000000:compressionEngineAllocator_Init:00178: SRM: Allocated OST context magic:2543059094
+2024/03/30 04:50:51.058547 MED:000000000000:mosMemPool_CreateEx:00665: Allocate 5120 for memory pool SRM_CEA_OSTCE_Pool, 32 blocks of 160
+2024/03/30 04:50:51.058552 LOW:000000000000:mosMemPool_CreateEx:00725: Mempool named SRM_CEA_OSTCE_Pool allocated at 0x2958680. More info: pMemPool:0x2213040, blockSizeInBytes:160, allocPerBlock:160, numBlocks:32, mallocSize:5120, alignment:0, flags:6, pMemAlignedStart:0x2958680, pMemEnd:0x2959a80
+2024/03/30 04:50:51.058554 LOW:000000000000:compressionEngineAllocator_Init:00217: SRM: The Compression Engine Allocator Initialization was successful, maxConfigurations:20, maxOsThreads:32 OST context magic:2543059094
+2024/03/30 04:50:51.058556 MED:000000000000:sizeReductionManager_InitIntrn:00439: SRM: SRM was created successfully pSched: (nil), numUmts: 1 ,maxConfigurations: 20 , maxOSThreads: 32.[       OK ] ntProtocolFeTest.formatCQE (31 ms)
+[ RUN      ] ntProtocolFeTest.formatCQE_ex_random
+[       OK ] ntProtocolFeTest.formatCQE_ex_random (30 ms)
+[----------] 2 tests from ntProtocolFeTest (61 ms total)
+
+[----------] 4 tests from DrlFetcherTest
+[ RUN      ] DrlFetcherTest.mu_drl_fetcher_no_ios
+[       OK ] DrlFetcherTest.mu_drl_fetcher_no_ios (251 ms)
+[ RUN      ] DrlFetcherTest.drl_fetcher_basic_mu_test
+[       OK ] DrlFetcherTest.drl_fetcher_basic_mu_test (141 ms)
+[ RUN      ] DrlFetcherTest.mu_drl_fetcher_all_mb_except_first_32k
+[       OK ] DrlFetcherTest.mu_drl_fetcher_all_mb_except_first_32k (452 ms)
+[ RUN      ] DrlFetcherTest.mu_drl_fetcher_second_half_of_mb
+[       OK ] DrlFetcherTest.mu_drl_fetcher_second_half_of_mb (412 ms)
+[----------] 4 tests from DrlFetcherTest (1256 ms total)
+
+[----------] 2 tests from DmCopierTests
+[ RUN      ] DmCopierTests.dm_copier_happy_path
+[       OK ] DmCopierTests.dm_copier_happy_path (342 ms)
+[ RUN      ] DmCopierTests.dm_copier_dont_track_prefetched
+[       OK ] DmCopierTests.dm_copier_dont_track_prefetched (342 ms)
+[----------] 2 tests from DmCopierTests (684 ms total)
+
+[----------] 1 test from CopiedRangeTrackerTest
+[ RUN      ] CopiedRangeTrackerTest.four_extents_become_green_in_reverse
+[       OK ] CopiedRangeTrackerTest.four_extents_become_green_in_reverse (41 ms)
+[----------] 1 test from CopiedRangeTrackerTest (41 ms total)
+
+[----------] 4 tests from TransportTcpTest
+[ RUN      ] TransportTcpTest.TestTraces
+[       OK ] TransportTcpTest.TestTraces (40 ms)
+[ RUN      ] TransportTcpTest.TestMemAllocator
+[       OK ] TransportTcpTest.TestMemAllocator (30 ms)
+[ RUN      ] TransportTcpTest.CQERetrieval
+[       OK ] TransportTcpTest.CQERetrieval (30 ms)
+[ RUN      ] TransportTcpTest.CRC32Infra
+[       OK ] TransportTcpTest.CRC32Infra (30 ms)
+[----------] 4 tests from TransportTcpTest (131 ms total)
+
+[----------] 4 tests from TransportTcpTimerTest
+[ RUN      ] TransportTcpTimerTest.TimerAbort_2
+[       OK ] TransportTcpTimerTest.TimerAbort_2 (41 ms)
+[ RUN      ] TransportTcpTimerTest.TimerReset
+[       OK ] TransportTcpTimerTest.TimerReset (1090 ms)
+[ RUN      ] TransportTcpTimerTest.TwoTimers
+[       OK ] TransportTcpTimerTest.TwoTimers (753 ms)
+[ RUN      ] TransportTcpTimerTest.TimerState
+[       OK ] TransportTcpTimerTest.TimerState (141 ms)
+[----------] 4 tests from TransportTcpTimerTest (2025 ms total)
+
+[----------] 1 test from TCPFrontendTest
+[ RUN      ] TCPFrontendTest.BadSizes
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] TCPFrontendTest.BadSizes (40 ms)
+[----------] 1 test from TCPFrontendTest (40 ms total)
+
+[----------] 4 tests from TCPAssociationTest
+[ RUN      ] TCPAssociationTest.BasicFactory
+[       OK ] TCPAssociationTest.BasicFactory (41 ms)
+[ RUN      ] TCPAssociationTest.BasicTcpAssociationFlow
+Using port 4000
+Using port 4001
+[       OK ] TCPAssociationTest.BasicTcpAssociationFlow (35 ms)
+[ RUN      ] TCPAssociationTest.ConnectionWithMessageQueue
+Using port 4002
+[       OK ] TCPAssociationTest.ConnectionWithMessageQueue (35 ms)
+[ RUN      ] TCPAssociationTest.EmptyListenerTeardownUponStop
+Using port 4003
+[       OK ] TCPAssociationTest.EmptyListenerTeardownUponStop (36 ms)
+[----------] 4 tests from TCPAssociationTest (147 ms total)
+
+[----------] 1 test from TCPListenerTest
+[ RUN      ] TCPListenerTest.OpenPortConnect
+Using port 4004
+[       OK ] TCPListenerTest.OpenPortConnect (40 ms)
+[----------] 1 test from TCPListenerTest (40 ms total)
+
+[----------] 4 tests from TCPFlowTest
+[ RUN      ] TCPFlowTest.MultipleHostsToSamePort
+Using port 4005
+[       OK ] TCPFlowTest.MultipleHostsToSamePort (40 ms)
+[ RUN      ] TCPFlowTest.ErrorDuringAccept
+Using port 4006
+[       OK ] TCPFlowTest.ErrorDuringAccept (36 ms)
+[ RUN      ] TCPFlowTest.ICReqDisconnectWithoutWaitForResp
+Using port 4007
+[       OK ] TCPFlowTest.ICReqDisconnectWithoutWaitForResp (40 ms)
+[ RUN      ] TCPFlowTest.PortRemovalSequence
+Using port 4008
+[       OK ] TCPFlowTest.PortRemovalSequence (146 ms)
+[----------] 4 tests from TCPFlowTest (262 ms total)
+
+[----------] 2 tests from TCPAdvanceFlowsTest
+[ RUN      ] TCPAdvanceFlowsTest.abortSubmission
+Using port 4009
+[       OK ] TCPAdvanceFlowsTest.abortSubmission (136 ms)
+[ RUN      ] TCPAdvanceFlowsTest.abortSecondFusedCommandInInboundQ
+Using port 4010
+[       OK ] TCPAdvanceFlowsTest.abortSecondFusedCommandInInboundQ (181 ms)
+[----------] 2 tests from TCPAdvanceFlowsTest (317 ms total)
+
+[----------] 2 tests from AssociationShutdownSequence
+[ RUN      ] AssociationShutdownSequence.ConnectToIoQueueForNonExistController
+Using port 4011
+[       OK ] AssociationShutdownSequence.ConnectToIoQueueForNonExistController (181 ms)
+[ RUN      ] AssociationShutdownSequence.ConnectStartedAfterAssociationShutdownReq
+Using port 4012
+[       OK ] AssociationShutdownSequence.ConnectStartedAfterAssociationShutdownReq (337 ms)
+[----------] 2 tests from AssociationShutdownSequence (518 ms total)
+
+[----------] 1 test from CloseConBeforeIoCompletedInTransport
+[ RUN      ] CloseConBeforeIoCompletedInTransport.twoIosInProtocols
+Using port 4013
+[       OK ] CloseConBeforeIoCompletedInTransport.twoIosInProtocols (482 ms)
+[----------] 1 test from CloseConBeforeIoCompletedInTransport (482 ms total)
+
+[----------] 10 tests from TCPAdvanceFlowsWithErrors
+[ RUN      ] TCPAdvanceFlowsWithErrors.c2hTermReqErrorInCapsuleCH
+Using port 4014
+[       OK ] TCPAdvanceFlowsWithErrors.c2hTermReqErrorInCapsuleCH (136 ms)
+[ RUN      ] TCPAdvanceFlowsWithErrors.InvalidCapsuleSGLLengthAlignment
+Using port 4015
+[       OK ] TCPAdvanceFlowsWithErrors.InvalidCapsuleSGLLengthAlignment (136 ms)
+[ RUN      ] TCPAdvanceFlowsWithErrors.InvalidAbortSGL
+Using port 4016
+[       OK ] TCPAdvanceFlowsWithErrors.InvalidAbortSGL (136 ms)
+[ RUN      ] TCPAdvanceFlowsWithErrors.c2hTermReqErrorInIcReqCH_flags
+Using port 4017
+[       OK ] TCPAdvanceFlowsWithErrors.c2hTermReqErrorInIcReqCH_flags (136 ms)
+[ RUN      ] TCPAdvanceFlowsWithErrors.c2hTermReqErrorInIcReqPdu_dgst
+Using port 4018
+[       OK ] TCPAdvanceFlowsWithErrors.c2hTermReqErrorInIcReqPdu_dgst (135 ms)
+[ RUN      ] TCPAdvanceFlowsWithErrors.WriteCapsuleCmdBeforeICReq
+Using port 4019
+[       OK ] TCPAdvanceFlowsWithErrors.WriteCapsuleCmdBeforeICReq (136 ms)
+[ RUN      ] TCPAdvanceFlowsWithErrors.h2cDataBeforeConnect
+Using port 4020
+[       OK ] TCPAdvanceFlowsWithErrors.h2cDataBeforeConnect (141 ms)
+[ RUN      ] TCPAdvanceFlowsWithErrors.c2hTermReqError_InCapsuleData_pduDataOffset
+Using port 4021
+[       OK ] TCPAdvanceFlowsWithErrors.c2hTermReqError_InCapsuleData_pduDataOffset (141 ms)
+[ RUN      ] TCPAdvanceFlowsWithErrors.c2hTermReqErrorInH2CData_ChFlags
+Using port 4022
+[       OK ] TCPAdvanceFlowsWithErrors.c2hTermReqErrorInH2CData_ChFlags (141 ms)
+[ RUN      ] TCPAdvanceFlowsWithErrors.c2hTermReqErrorInH2CData_PshDataOffset
+Using port 4023
+[       OK ] TCPAdvanceFlowsWithErrors.c2hTermReqErrorInH2CData_PshDataOffset (136 ms)
+[----------] 10 tests from TCPAdvanceFlowsWithErrors (1374 ms total)
+
+[----------] 2 tests from TCPAdvanceFlowsWithConnectionEstablisedTimer
+[ RUN      ] TCPAdvanceFlowsWithConnectionEstablisedTimer.socketConnect
+Using port 4024
+[       OK ] TCPAdvanceFlowsWithConnectionEstablisedTimer.socketConnect (236 ms)
+[ RUN      ] TCPAdvanceFlowsWithConnectionEstablisedTimer.fromSocketConnectTillWriteConnect
+Using port 4025
+[       OK ] TCPAdvanceFlowsWithConnectionEstablisedTimer.fromSocketConnectTillWriteConnect (241 ms)
+[----------] 2 tests from TCPAdvanceFlowsWithConnectionEstablisedTimer (477 ms total)
+
+[----------] 1 test from TCPAdvanceFlowsWithConnectionTeardownTimer
+[ RUN      ] TCPAdvanceFlowsWithConnectionTeardownTimer.ConnectionTeardownWithoutTimer
+Using port 4026
+[       OK ] TCPAdvanceFlowsWithConnectionTeardownTimer.ConnectionTeardownWithoutTimer (181 ms)
+[----------] 1 test from TCPAdvanceFlowsWithConnectionTeardownTimer (181 ms total)
+
+[----------] 1 test from TCPAdvanceFlowsWithC2HTermReqTimer
+[ RUN      ] TCPAdvanceFlowsWithC2HTermReqTimer.closeConnectionWhenTimerIsActive
+Using port 4027
+[       OK ] TCPAdvanceFlowsWithC2HTermReqTimer.closeConnectionWhenTimerIsActive (192 ms)
+[----------] 1 test from TCPAdvanceFlowsWithC2HTermReqTimer (192 ms total)
+
+[----------] 2 tests from TCPAdvanceFlowsWithSenderErrors
+[ RUN      ] TCPAdvanceFlowsWithSenderErrors.SenderErrorDuringIcResponse
+Using port 4028
+[       OK ] TCPAdvanceFlowsWithSenderErrors.SenderErrorDuringIcResponse (146 ms)
+[ RUN      ] TCPAdvanceFlowsWithSenderErrors.SenderErrorDuringR2T
+Using port 4029
+[       OK ] TCPAdvanceFlowsWithSenderErrors.SenderErrorDuringR2T (145 ms)
+[----------] 2 tests from TCPAdvanceFlowsWithSenderErrors (291 ms total)
+
+[----------] 2 tests from TCPAdvanceFlowsWithReceiverErrors
+[ RUN      ] TCPAdvanceFlowsWithReceiverErrors.ReceiverErrorDuringInCapsule
+Using port 4030
+[       OK ] TCPAdvanceFlowsWithReceiverErrors.ReceiverErrorDuringInCapsule (146 ms)
+[ RUN      ] TCPAdvanceFlowsWithReceiverErrors.ReceiverErrorDuringH2CDataContent
+Using port 4031
+[       OK ] TCPAdvanceFlowsWithReceiverErrors.ReceiverErrorDuringH2CDataContent (197 ms)
+[----------] 2 tests from TCPAdvanceFlowsWithReceiverErrors (343 ms total)
+
+[----------] 2 tests from TCPAdvanceFlowsWithH2CTermReq
+[ RUN      ] TCPAdvanceFlowsWithH2CTermReq.H2CTermReqBeforeICReq
+Using port 4032
+[       OK ] TCPAdvanceFlowsWithH2CTermReq.H2CTermReqBeforeICReq (135 ms)
+[ RUN      ] TCPAdvanceFlowsWithH2CTermReq.properH2CTermReqWitData2
+Using port 4033
+[       OK ] TCPAdvanceFlowsWithH2CTermReq.properH2CTermReqWitData2 (232 ms)
+[----------] 2 tests from TCPAdvanceFlowsWithH2CTermReq (367 ms total)
+
+[----------] 3 tests from TCPAdvanceFlowsWithDigestError
+[ RUN      ] TCPAdvanceFlowsWithDigestError.headerDigestError_CapsuleCmd
+Using port 4034
+[       OK ] TCPAdvanceFlowsWithDigestError.headerDigestError_CapsuleCmd (181 ms)
+[ RUN      ] TCPAdvanceFlowsWithDigestError.dataDigestError_InCapsuleCmd
+Using port 4035
+[       OK ] TCPAdvanceFlowsWithDigestError.dataDigestError_InCapsuleCmd (221 ms)
+[ RUN      ] TCPAdvanceFlowsWithDigestError.dataDigestError_FirstFusedCommand
+Using port 4036
+[       OK ] TCPAdvanceFlowsWithDigestError.dataDigestError_FirstFusedCommand (221 ms)
+[----------] 3 tests from TCPAdvanceFlowsWithDigestError (623 ms total)
+
+[----------] 3 tests from ReceiverTest
+[ RUN      ] ReceiverTest.RegisterWithReactor
+Using port 4037
+[       OK ] ReceiverTest.RegisterWithReactor (35 ms)
+[ RUN      ] ReceiverTest.HandleICReqOneGo
+Using port 4038
+[       OK ] ReceiverTest.HandleICReqOneGo (36 ms)
+[ RUN      ] ReceiverTest.InitiatorH2CTerm_InvalidHeaderField
+Using port 4039
+
+/data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/sdt/target/transport/receiver_test.cpp:4031: Failure
+Value of: pResp->ch.pdu_type
+  Actual: 1-byte object <00>
+Expected: nvme_spec::PduType::H2CTermReq
+Which is: 1-byte object <02>
+[  FAILED  ] ReceiverTest.InitiatorH2CTerm_InvalidHeaderField (35 ms)
+[----------] 3 tests from ReceiverTest (106 ms total)
+
+[----------] 1 test from ReceiverDataTest
+[ RUN      ] ReceiverDataTest.HandleConnectWithPDOValueZero
+Using port 4040
+[       OK ] ReceiverDataTest.HandleConnectWithPDOValueZero (76 ms)
+[----------] 1 test from ReceiverDataTest (76 ms total)
+
+[----------] 1 test from ReceiverH2CDataTest
+[ RUN      ] ReceiverH2CDataTest.Small1KTransfers
+Using port 4041
+[       OK ] ReceiverH2CDataTest.Small1KTransfers (317 ms)
+[----------] 1 test from ReceiverH2CDataTest (317 ms total)
+
+[----------] 4 tests from FusedTest
+[ RUN      ] FusedTest.Good_i1_i1d_f1_f1d_s1_s1d
+Using port 4042
+[       OK ] FusedTest.Good_i1_i1d_f1_f1d_s1_s1d (296 ms)
+[ RUN      ] FusedTest.Good_f1_s1_s1d_f1d
+Using port 4043
+[       OK ] FusedTest.Good_f1_s1_s1d_f1d (322 ms)
+[ RUN      ] FusedTest.Error_s1_s1d_i1_i1d
+Using port 4044
+[       OK ] FusedTest.Error_s1_s1d_i1_i1d (160 ms)
+[ RUN      ] FusedTest.Error_f1Sgl_s1_s1d
+Using port 4045
+[       OK ] FusedTest.Error_f1Sgl_s1_s1d (116 ms)
+[----------] 4 tests from FusedTest (894 ms total)
+
+[----------] 6 tests from AsyncPageAllocatorTest
+[ RUN      ] AsyncPageAllocatorTest.WriteSingleInCapsule
+Using port 4046
+[       OK ] AsyncPageAllocatorTest.WriteSingleInCapsule (266 ms)
+[ RUN      ] AsyncPageAllocatorTest.WriteTwoOutOfCapsuleCmds
+Using port 4047
+[       OK ] AsyncPageAllocatorTest.WriteTwoOutOfCapsuleCmds (863 ms)
+[ RUN      ] AsyncPageAllocatorTest.WriteTwoConsecutiveInCapsuleCmds
+Using port 4048
+[       OK ] AsyncPageAllocatorTest.WriteTwoConsecutiveInCapsuleCmds (402 ms)
+[ RUN      ] AsyncPageAllocatorTest.WriteSingleInCapsuleAndNoDataCommand
+Using port 4049
+[       OK ] AsyncPageAllocatorTest.WriteSingleInCapsuleAndNoDataCommand (502 ms)
+[ RUN      ] AsyncPageAllocatorTest.H2CData4K_AsyncAllocation
+Using port 4050
+[       OK ] AsyncPageAllocatorTest.H2CData4K_AsyncAllocation (116 ms)
+[ RUN      ] AsyncPageAllocatorTest.abortPendingInCapsule
+Using port 4051
+[       OK ] AsyncPageAllocatorTest.abortPendingInCapsule (217 ms)
+[----------] 6 tests from AsyncPageAllocatorTest (2367 ms total)
+
+[----------] 4 tests from TCPSenderBufferTest
+[ RUN      ] TCPSenderBufferTest.BasicHeader
+Using port 4052
+[       OK ] TCPSenderBufferTest.BasicHeader (35 ms)
+[ RUN      ] TCPSenderBufferTest.ZeoPaddingPartial
+Using port 4053
+[       OK ] TCPSenderBufferTest.ZeoPaddingPartial (35 ms)
+[ RUN      ] TCPSenderBufferTest.DataPartial
+Using port 4054
+[       OK ] TCPSenderBufferTest.DataPartial (36 ms)
+[ RUN      ] TCPSenderBufferTest.DataMultiplePagesPartialTwice
+Using port 4055
+[       OK ] TCPSenderBufferTest.DataMultiplePagesPartialTwice (35 ms)
+[----------] 4 tests from TCPSenderBufferTest (141 ms total)
+
+[----------] 2 tests from TCPSenderTest
+[ RUN      ] TCPSenderTest.SQHD
+[       OK ] TCPSenderTest.SQHD (36 ms)
+[ RUN      ] TCPSenderTest.ICResp
+Using port 4056
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] TCPSenderTest.ICResp (55 ms)
+[----------] 2 tests from TCPSenderTest (91 ms total)
+
+[----------] 1 test from InboundQueueTest
+[ RUN      ] InboundQueueTest.LimitsResize
+Using port 4057
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] InboundQueueTest.LimitsResize (45 ms)
+[----------] 1 test from InboundQueueTest (45 ms total)
+
+[----------] 1 test from TCPCommandTest
+[ RUN      ] TCPCommandTest.smallUDPayloadAllocate
+Using port 4058
+[       OK ] TCPCommandTest.smallUDPayloadAllocate (36 ms)
+[----------] 1 test from TCPCommandTest (36 ms total)
+
+[----------] 1 test from WithUmtClass
+[ RUN      ] WithUmtClass.crash_on_assert
+
+[WARNING] /data/build/workspace/ScaleIO-Common-Job/ScaleIO/src/gtest/gtest_src/src/gtest-death-test.cc:826:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] WithUmtClass.crash_on_assert (35 ms)
+[----------] 1 test from WithUmtClass (35 ms total)
+
+[----------] 1 test from MallocHijackerTest
+[ RUN      ] MallocHijackerTest.malloc_calloc_realloc
+[       OK ] MallocHijackerTest.malloc_calloc_realloc (35 ms)
+[----------] 1 test from MallocHijackerTest (35 ms total)
+
+[----------] 2 tests from WithConditionSynchronizationClass
+[ RUN      ] WithConditionSynchronizationClass.case1
+[       OK ] WithConditionSynchronizationClass.case1 (36 ms)
+[ RUN      ] WithConditionSynchronizationClass.case4
+[       OK ] WithConditionSynchronizationClass.case4 (50 ms)
+[----------] 2 tests from WithConditionSynchronizationClass (86 ms total)
+
+[----------] 1 test from MultipleBlockSizes/ReceiverH2CDataParameterTest
+[ RUN      ] MultipleBlockSizes/ReceiverH2CDataParameterTest.OneLargeTransfer/0
+Using port 4059
+Using port 4060
+[       OK ] MultipleBlockSizes/ReceiverH2CDataParameterTest.OneLargeTransfer/0 (417 ms)
+[----------] 1 test from MultipleBlockSizes/ReceiverH2CDataParameterTest (417 ms total)
+
+[----------] 11 tests from MultipleSizes/ReceiverH2CDataLargeParameterTest
+[ RUN      ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/1
+Using port 4061
+Using port 4062
+[       OK ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/1 (201 ms)
+[ RUN      ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/4
+Using port 4063
+Using port 4064
+[       OK ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/4 (448 ms)
+[ RUN      ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/7
+Using port 4065
+Using port 4066
+[       OK ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/7 (693 ms)
+[ RUN      ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/10
+Using port 4067
+Using port 4068
+[       OK ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/10 (944 ms)
+[ RUN      ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/13
+Using port 4069
+Using port 4070
+[       OK ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/13 (1191 ms)
+[ RUN      ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/16
+Using port 4071
+Using port 4072
+[       OK ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/16 (1438 ms)
+[ RUN      ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/19
+Using port 4073
+Using port 4074
+[       OK ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/19 (1683 ms)
+[ RUN      ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/22
+Using port 4075
+Using port 4076
+[       OK ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/22 (1935 ms)
+[ RUN      ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/25
+Using port 4077
+Using port 4078
+[       OK ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/25 (2178 ms)
+[ RUN      ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/28
+Using port 4079
+Using port 4080
+[       OK ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/28 (2428 ms)
+[ RUN      ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/31
+Using port 4081
+Using port 4082
+[       OK ] MultipleSizes/ReceiverH2CDataLargeParameterTest.LargeTransfer/31 (2676 ms)
+[----------] 11 tests from MultipleSizes/ReceiverH2CDataLargeParameterTest (15815 ms total)
+
+[----------] 10 tests from MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest
+[ RUN      ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/2
+Using port 4083
+Using port 4084
+[       OK ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/2 (216 ms)
+[ RUN      ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/5
+Using port 4085
+Using port 4086
+[       OK ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/5 (216 ms)
+[ RUN      ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/8
+Using port 4087
+Using port 4088
+[       OK ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/8 (1222 ms)
+[ RUN      ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/11
+Using port 4089
+Using port 4090
+[       OK ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/11 (221 ms)
+[ RUN      ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/14
+Using port 4091
+Using port 4092
+[       OK ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/14 (217 ms)
+[ RUN      ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/17
+Using port 4093
+Using port 4094
+[       OK ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/17 (216 ms)
+[ RUN      ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/20
+Using port 4095
+Using port 4096
+[       OK ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/20 (221 ms)
+[ RUN      ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/23
+Using port 4097
+Using port 4098
+[       OK ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/23 (217 ms)
+[ RUN      ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/26
+Using port 4099
+Using port 4100
+[       OK ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/26 (216 ms)
+[ RUN      ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/29
+Using port 4101
+Using port 4102
+[       OK ] MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest.headerAndDataDigest/29 (2849 ms)
+[----------] 10 tests from MultipleSizes_headerAndDataDigest/ReceiverH2CDataLargeParameterWithHandDDigestTest (5811 ms total)
+
+[----------] 13 tests from LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest
+[ RUN      ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/2
+Using port 4103
+Using port 4104
+[       OK ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/2 (181 ms)
+[ RUN      ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/5
+Using port 4105
+Using port 4106
+[       OK ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/5 (176 ms)
+[ RUN      ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/8
+Using port 4107
+Using port 4108
+[       OK ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/8 (176 ms)
+[ RUN      ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/11
+Using port 4109
+Using port 4110
+[       OK ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/11 (76 ms)
+[ RUN      ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/14
+Using port 4111
+Using port 4112
+[       OK ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/14 (176 ms)
+[ RUN      ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/17
+Using port 4113
+Using port 4114
+[       OK ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/17 (76 ms)
+[ RUN      ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/20
+Using port 4115
+Using port 4116
+[       OK ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/20 (181 ms)
+[ RUN      ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/23
+Using port 4117
+Using port 4118
+[       OK ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/23 (176 ms)
+[ RUN      ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/26
+Using port 4119
+Using port 4120
+[       OK ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/26 (181 ms)
+[ RUN      ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/29
+Using port 4121
+Using port 4122
+[       OK ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/29 (176 ms)
+[ RUN      ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/32
+Using port 4123
+Using port 4124
+[       OK ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/32 (176 ms)
+[ RUN      ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/35
+Using port 4125
+Using port 4126
+[       OK ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/35 (76 ms)
+[ RUN      ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/38
+Using port 4127
+Using port 4128
+[       OK ] LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest.shortH2cDataFollowedByInCapsule/38 (176 ms)
+[----------] 13 tests from LookAheaPduTest/ReceiverH2CDataLookAheadParameterWitDigesttTest (2003 ms total)
+
+[----------] 4 tests from TCPSenderC2HDataTestWithParamsLengthDigest/TCPSenderC2HDataTest
+[ RUN      ] TCPSenderC2HDataTestWithParamsLengthDigest/TCPSenderC2HDataTest.C2HData/1
+Using port 4129
+[       OK ] TCPSenderC2HDataTestWithParamsLengthDigest/TCPSenderC2HDataTest.C2HData/1 (36 ms)
+[ RUN      ] TCPSenderC2HDataTestWithParamsLengthDigest/TCPSenderC2HDataTest.C2HData/4
+Using port 4130
+[       OK ] TCPSenderC2HDataTestWithParamsLengthDigest/TCPSenderC2HDataTest.C2HData/4 (35 ms)
+[ RUN      ] TCPSenderC2HDataTestWithParamsLengthDigest/TCPSenderC2HDataTest.C2HData/7
+Using port 4131
+[       OK ] TCPSenderC2HDataTestWithParamsLengthDigest/TCPSenderC2HDataTest.C2HData/7 (35 ms)
+[ RUN      ] TCPSenderC2HDataTestWithParamsLengthDigest/TCPSenderC2HDataTest.C2HData/10
+Using port 4132
+[       OK ] TCPSenderC2HDataTestWithParamsLengthDigest/TCPSenderC2HDataTest.C2HData/10 (36 ms)
+[----------] 4 tests from TCPSenderC2HDataTestWithParamsLengthDigest/TCPSenderC2HDataTest (142 ms total)
+
+[----------] 1 test from TCPSenderTestR2TWithDigest/TCPSenderTestR2T
+[ RUN      ] TCPSenderTestR2TWithDigest/TCPSenderTestR2T.R2T/1
+Using port 4133
+[       OK ] TCPSenderTestR2TWithDigest/TCPSenderTestR2T.R2T/1 (35 ms)
+[----------] 1 test from TCPSenderTestR2TWithDigest/TCPSenderTestR2T (35 ms total)
+
+[----------] 2 tests from TCPResponseConectCapsuleWithDigest/TCPResponseConectCapsule
+[ RUN      ] TCPResponseConectCapsuleWithDigest/TCPResponseConectCapsule.ConnectCapsuleResponse/0
+Using port 4134
+[       OK ] TCPResponseConectCapsuleWithDigest/TCPResponseConectCapsule.ConnectCapsuleResponse/0 (36 ms)
+[ RUN      ] TCPResponseConectCapsuleWithDigest/TCPResponseConectCapsule.ConnectCapsuleResponse/3
+Using port 4135
+[       OK ] TCPResponseConectCapsuleWithDigest/TCPResponseConectCapsule.ConnectCapsuleResponse/3 (35 ms)
+[----------] 2 tests from TCPResponseConectCapsuleWithDigest/TCPResponseConectCapsule (71 ms total)
+
+[----------] 4 tests from TCPResponseC2HTestWithParamsLengthDigest/TCPResponseC2HTest
+[ RUN      ] TCPResponseC2HTestWithParamsLengthDigest/TCPResponseC2HTest.C2HData/2
+Using port 4136
+[       OK ] TCPResponseC2HTestWithParamsLengthDigest/TCPResponseC2HTest.C2HData/2 (35 ms)
+[ RUN      ] TCPResponseC2HTestWithParamsLengthDigest/TCPResponseC2HTest.C2HData/5
+Using port 4137
+[       OK ] TCPResponseC2HTestWithParamsLengthDigest/TCPResponseC2HTest.C2HData/5 (35 ms)
+[ RUN      ] TCPResponseC2HTestWithParamsLengthDigest/TCPResponseC2HTest.C2HData/8
+Using port 4138
+[       OK ] TCPResponseC2HTestWithParamsLengthDigest/TCPResponseC2HTest.C2HData/8 (35 ms)
+[ RUN      ] TCPResponseC2HTestWithParamsLengthDigest/TCPResponseC2HTest.C2HData/11
+Using port 4139
+[       OK ] TCPResponseC2HTestWithParamsLengthDigest/TCPResponseC2HTest.C2HData/11 (36 ms)
+[----------] 4 tests from TCPResponseC2HTestWithParamsLengthDigest/TCPResponseC2HTest (142 ms total)
+
+[----------] 2 tests from TCPCommandTestH2CWithSizes/TCPCommandTestH2C
+[ RUN      ] TCPCommandTestH2CWithSizes/TCPCommandTestH2C.H2C/2
+Using port 4140
+[       OK ] TCPCommandTestH2CWithSizes/TCPCommandTestH2C.H2C/2 (35 ms)
+[ RUN      ] TCPCommandTestH2CWithSizes/TCPCommandTestH2C.H2C/5
+Using port 4141
+[       OK ] TCPCommandTestH2CWithSizes/TCPCommandTestH2C.H2C/5 (36 ms)
+[----------] 2 tests from TCPCommandTestH2CWithSizes/TCPCommandTestH2C (71 ms total)
+
+[----------] Global test environment tear-down
+[==========] 181 tests from 62 test cases ran. (60621 ms total)
+[  PASSED  ] 180 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ReceiverTest.InitiatorH2CTerm_InvalidHeaderField
+
+ 1 FAILED TEST
+  YOU HAVE 1 DISABLED TEST
+
